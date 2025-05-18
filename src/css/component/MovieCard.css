@@ -1,0 +1,33 @@
+.movie-card {
+  background: #141414;
+  color: white;
+  width: 200px;
+  flex: 0 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-info {
+  padding: 0.5rem;
+}
+
+.movie-info h3 {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.movie-info p {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.movie-info span {
+  display: block;
+  margin-top: 0.3rem;
+  font-weight: bold;
+}

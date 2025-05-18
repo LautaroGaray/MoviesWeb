@@ -1,0 +1,15 @@
+.genre-section {
+  margin: 1rem 2rem;
+}
+
+.genre-section h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.movie-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}

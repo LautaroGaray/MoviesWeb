@@ -1,0 +1,55 @@
+/* === RESET LIGERO === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === VARIABLES CSS === */
+:root {
+  --color-background: #141414;
+  --color-primary: #e50914;
+  --color-text: #ffffff;
+  --color-text-muted: #b3b3b3;
+  --color-card-bg: #222222;
+  --color-card-hover: #333333;
+  --font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* === ESTILOS GLOBALES === */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  line-height: 1.5;
+}
+
+/* Scroll horizontal para carruseles */
+.genre-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+.genre-row::-webkit-scrollbar {
+  height: 8px;
+}
+.genre-row::-webkit-scrollbar-thumb {
+  background: var(--color-card-hover);
+  border-radius: 4px;
+}
+
+/* Titulos de sección */
+.section-title {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  margin: 20px 0 10px 10px;
+}
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.2rem;
+  }
+}
