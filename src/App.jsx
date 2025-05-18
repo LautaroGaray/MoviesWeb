@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { MovieBrowser } from './pages/MovieBrowser';
+import './css/common.css'
 
 function App() {
   return <MovieBrowser />;

@@ -3,6 +3,7 @@ import { gateway } from '../../services/gateway';
 import { GenreSection } from '../components/GenreSection';
 import { ErrorModal } from '../components/ErrorModal';
 
+
 export const MovieBrowser = () => {
   const [moviesByGenre, setMoviesByGenre] = useState({});
   const [error, setError] = useState(null);

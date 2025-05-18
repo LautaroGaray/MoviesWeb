@@ -1,5 +1,6 @@
 .genre-section {
   margin: 1rem 2rem;
+  position: relative; /* Para posicionar las flechas de forma absoluta */
 }
 
 .genre-section h2 {
@@ -9,7 +10,49 @@
 
 .movie-row {
   display: flex;
-  overflow-x: auto;
+  flex-wrap: nowrap;
   gap: 1rem;
   padding-bottom: 1rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+
+/* Estilo para las flechas de desplazamiento */
+.scroll-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%); /* Centra las flechas verticalmente */
+  z-index: 10; 
+}
+
+.scroll-arrow {
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo transparente */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.scroll-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* Efecto hover para las flechas */
+}
+
+.scroll-arrow:focus {
+  outline: none;
+}
+
+
+.movie-row-wrapper {
+  overflow: hidden; /* Oculta tarjetas fuera del rango visible */
+  width: calc(5 * 200px + 4 * 1rem); /* 5 tarjetas visibles + 4 gaps */
+  margin: auto;
+  position: relative;
 }

@@ -1,0 +1,88 @@
+.movie-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.movie-modal {
+  background: var(--color-card-bg);
+  color: var(--color-text);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-modal img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 40vh; /* Para evitar que la imagen ocupe todo */
+  border-radius: 8px 8px 0 0;
+}
+
+.movie-modal h2 {
+  font-size: 1.4rem;
+  margin: 16px;
+}
+
+.movie-modal p {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin: 0 16px 16px 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+
+.movie-modal span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin: 0 16px 16px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+
+.movie-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 20, 20, 0.6); /* Más oscuro para contraste */
+  backdrop-filter: blur(8px);        /* 👈 Efecto blur */
+  -webkit-backdrop-filter: blur(8px); /* 👈 Compatibilidad Safari */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 16px;
+  box-sizing: border-box;
+}
