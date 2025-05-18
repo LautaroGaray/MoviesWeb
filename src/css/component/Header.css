@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--color-background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.hamburger-menu {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  margin-right: 10px;
+}
+
+.logo {
+  height: 30px;
+}
+
+.web-title {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.profile-icon {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}

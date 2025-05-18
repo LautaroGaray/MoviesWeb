@@ -1,0 +1,81 @@
+/* Estilo general del Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  width: 250px;
+  height: 100%;
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  transition: left 0.3s ease;
+  z-index: 1000; 
+  padding-top: 60px; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Muestra el Sidebar cuando tiene la clase 'visible' */
+.sidebar.visible {
+  left: 0; /* Muestra el Sidebar */
+}
+
+/* Estilo para el botón de cierre */
+.sidebar .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Cambio de color cuando se pasa el mouse sobre el botón de cierre */
+.sidebar .close-btn:hover {
+  color: var(--color-primary);
+}
+
+/* Estilo para la lista de enlaces en el Sidebar */
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo de los enlaces */
+.sidebar-links li a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center; /* Alinea el ícono y el texto */
+  padding-left: 20px; /* Agrega un poco de espacio a la izquierda */
+}
+
+/* Estilo cuando pasas el ratón sobre los enlaces */
+.sidebar-links li a:hover {
+  background-color: var(--color-card-hover); 
+  color: var(--color-primary); 
+  border-radius: 4px;
+}
+
+/* Estilo para los íconos de Font Awesome dentro de los enlaces */
+.sidebar-links li a .fa {
+  margin-right: 12px; 
+}
+
+/* Estilo de los íconos */
+.sidebar-links li a .fa {
+  font-size: 1.5rem; /* Tamaño de los íconos */
+  transition: color 0.3s ease;
+}
+
+
+.sidebar-links li a:hover .fa {
+  color: var(--color-primary);
+}
